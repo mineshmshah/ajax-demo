@@ -1,0 +1,19 @@
+
+<app-search
+  [term]="term"
+  (search)="updateTerm($event)"></app-search>
+
+<p *ngIf="weather">
+  The current weather in {{term}} is :  {{weather.weather[0].description}}
+  <img src={{icon()}}>
+</p>
+<!--<p>-->
+<!--weather works!-->
+<!--{{weatherService.number}}-->
+
+<!--</p>-->
+
+<!--<pre>-->
+<!--{{weather | json}}-->
+
+<!--</pre>-->

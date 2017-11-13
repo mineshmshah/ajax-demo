@@ -1,0 +1,5 @@
+<h1> Search the current weather in your favourite city!!</h1>
+
+<input [value]="term" (input)="term=$event.target.value" /> Search for {{term}}
+<button (click)="search.emit(term)">Go</button>
+
